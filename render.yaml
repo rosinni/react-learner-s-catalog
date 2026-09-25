@@ -1,0 +1,9 @@
+services:
+  - type: web
+    runtime: node
+    name: mi-app
+    buildCommand: npm ci && npm run build
+    startCommand: node .output/server/index.mjs
+    envVars:
+      - key: NITRO_PRESET
+        value: render-com
