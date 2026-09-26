@@ -85,6 +85,7 @@ services:
   - type: web
     runtime: node
     name: mi-app
+    plan: free
     buildCommand: npm ci && npm run build
     startCommand: node .output/server/index.mjs
     envVars:
